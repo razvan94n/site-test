@@ -1,0 +1,35 @@
+body{
+	margin: 0;
+	padding: 0;
+  background: -webkit-linear-gradient(left, #24243e, #302b63, #0f0c29);
+  background: -o-linear-gradient(left, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+
+}
+
+.nav ul {
+margin-left: 250px;
+}
+
+.nav li{
+list-style: none;
+float: left;
+line-height: 50px;
+
+}
+
+.nav a{
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+	font-size: 17px;
+	font-family: 'Roboto';
+	color: #fff;
+	padding: 0 20px;
+	transition: 0.7s;
+}
+
+.nav a:hover{
+	transition: 0.7s;
+	background: rgba(23, 40, 50, 0.5);
+}

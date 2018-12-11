@@ -1,0 +1,57 @@
+	$(document).ready(function() {
+	var s = document.getElementsByTagName('h6');
+				var oneDay = 24 * 60 * 60 * 1000;
+				var firstDate = new Date("July 10, 2018 12:00:00");var secondDate = new Date();
+				var days = (firstDate.getTime() - secondDate.getTime()) / (oneDay);
+				var hrs = (days - Math.floor(days)) * 24;
+				var min = (hrs - Math.floor(hrs)) * 60;
+				s[0].innerHTML = Math.floor(days);
+				s[1].innerHTML = Math.floor(hrs);
+				s[2].innerHTML = Math.floor(min);
+				s[3].innerHTML = Math.floor((min - Math.floor(min)) * 60);
+				var i = setInterval(function() {n()}, 1000)
+				function f(d, x) {s[d].innerHTML = x;s[d - 1].innerHTML = Number(s[d - 1].innerHTML) - 1;}
+				function n() {s[3].innerHTML = Number(s[3].innerHTML) - 1;
+					if (s[3].innerHTML == -1) {f(3, 59)
+						if (s[2].innerHTML == -1) {f(2, 59)
+							if (s[1].innerHTML == -1) {f(1, 23)
+							}}}if(s[0].innerHTML <= -1) {clearInterval(i);document.getElementsById('div')[0].innerHTML='<h2>The event is over.</h2>'
+						}}
+		$('.nume, .varsta, .telefon').val('');
+$("#transport").val("");
+		$('#overlay, .close_popup').click(function(e){
+e.preventDefault();
+$('.nume, .varsta, .telefon').val('');
+$("#transport").val("");
+$('#overlay, #thankyou_message').fadeOut();
+		})
+	  $('#locuri').prop("disabled", true);
+	  $('#transport').change(function() {
+	    if ($(this).val() == 'Vin cu masina personala') {
+	      $('#locuri').prop("disabled", false);
+	    } else {
+	      $('#locuri').prop("disabled", true);
+	    }
+	  });
+
+
+	  $('.learn-more').click(function(e) {
+	    e.preventDefault();
+	    $(this).prev("p.content").toggleClass("showContent", 1000);
+	    $(this).hide();
+	  });
+
+	  if ($(window).width() < 767) {
+	    $('.register-btn').attr('href', '#mobile_register')
+	  }
+	})
+	$(window).scroll(function() {
+	  var scrollTop = $(this).scrollTop();
+
+	  if ($(this).scrollTop() > 200) {
+	    $('.toTop').fadeIn();
+	  } else {
+	    $('.toTop').fadeOut();
+	  }
+
+	});

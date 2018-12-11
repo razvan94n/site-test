@@ -1,0 +1,136 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("pix.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo{
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
+          .logo:hover{
+            filter: drop-shadow(4px 2px 4px crimson);
+            transition: 1s;
+}
+.up{
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 8px;
+  font-family: "Raleway", sans-serif;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
+
+
+
+.middle{
+  color: #fff;
+  text-align:center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-family: "Raleway", sans-serif;
+}
+
+#mySidenav{
+  top: 35%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -135px; /* Position them outside of the screen */
+  transition: 0.9s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 140px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 14px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+  top: 20px;
+  background-color: rgb(244,67,54, 0.5);
+}
+        #about:hover{
+        background-color: #4CAF50;
+        }
+#blog {
+  top: 80px;
+  background-color: rgb(244,67,54, 0.5);
+}
+        #blog:hover{
+          background-color: #4CAF50;
+        }
+#projects {
+  top: 140px;
+  background-color: rgb(244,67,54, 0.5);
+}
+        #projects:hover{
+          background-color: #4CAF50;
+        }
+#contact {
+  top: 200px;
+  background-color: rgb(244,67,54, 0.5);
+}
+        #contact:hover{
+          background-color: #4CAF50;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bottom{
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  padding: 12px 24px!important;
+  transform: translate(-50%,-50%);
+  font-family: "Raleway", sans-serif;
+}
